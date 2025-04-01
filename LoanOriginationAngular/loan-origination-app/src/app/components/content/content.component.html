@@ -1,0 +1,19 @@
+<div class="container" style="margin-bottom: 50px;">
+    <div class="sidebar">
+      <div class="brand">
+        <span class="logo-icon"></span>
+        <span class="brand-name">T Finance</span>
+      </div>
+      <div>
+      <ul class="menu">
+        <li routerLinkActive="active" [routerLink]="['/dashboard']">Dashboard</li>
+        <li routerLinkActive="active" [routerLink]="['/apply-loan']">Apply for Loan</li>
+        <li routerLinkActive="active" [routerLink]="['/customer-search']">Find Customer</li>
+        <li routerLinkActive="active" [routerLink]="['/loan-history']">Loan History</li>
+      </ul>
+    </div>
+    </div>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+</div>

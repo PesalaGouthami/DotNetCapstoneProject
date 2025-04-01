@@ -1,0 +1,95 @@
+.sidebar {
+    width: 250px;
+    background: #000;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+   
+  .logo-icon {
+    width: 10px;
+    height: 10px;
+    background: #ff6600;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+   
+  .brand-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+   
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+   
+  .menu li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+   
+  .menu .active {
+    background: #ff6600;
+    border-radius: 5px;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 1.5em;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu li.active a {
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }

@@ -1,0 +1,59 @@
+
+   <div class="dashboard-container">
+    <!-- Sidebar -->
+    <!-- <div class="sidebar">
+        <div class="brand">
+          <span class="logo-icon"></span>
+          <span class="brand-name">T Finance</span>
+        </div>
+        <ul class="menu">
+          <li class="active">Dashboard</li>
+          <li [routerLink]="['/apply-loan']">Apply for Loan</li>
+          <li [routerLink]="['/customer-search']">Find Customer</li>
+          <li [routerLink]="['/loan-history']">Loan History</li>
+        </ul>
+      </div> -->
+   
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- <div class="top-bar">
+        <h2 class="dashboard-title">Dashboard</h2>
+        <button class="btn logout-btn">Logout</button>
+      </div> -->
+   
+      <!-- Welcome Box -->
+      <div class="welcome-box">
+        <div class="p-2"><img src = "../../../assets/images/profile.png" height="75px" width="75px" style="border-radius: 10px;"></div>
+        <h3>Welcome <span class="highlight">{{firstname}} {{lastname}}</span>,</h3>
+        <p>Ready to assist borrowers today?</p>
+      </div>
+   
+      <!-- Services Section -->
+      <h4 class="services-title">Active Services</h4>
+      <div class="services">
+        <div class="service-card">
+          <div class="p-2"><img src = "../../../assets/images/loan1.webp" height="75px" width="75px" style="border-radius: 10px;"></div>
+          <h5>Apply for Loan</h5>
+          <p>Apply for a new loan, name, DOB, email is required to register.</p>
+          <button class="btn service-btn" [routerLink]="['/apply-loan']">Apply Now</button>
+        </div>
+   
+        <div class="service-card">
+            <div class="p-2"><img src = "../../../assets/images/search.jpg" height="75px" width="75px" style="border-radius: 10px;"></div>
+          <h5>Find Customer</h5>
+          <p>Search customer by first name, last name or date of birth.</p>
+          <button class="btn service-btn" [routerLink]="['/customer-search']">Search Customer</button>
+        </div>
+   
+        <div class="service-card">
+            <div class="p-2"><img src = "../../../assets/images/history.jpg" height="75px" width="75px" style="border-radius: 10px;"></div>
+          <h5>Loan History</h5>
+          <p>Search customer by first name, last name or date of birth.</p>
+          <button class="btn service-btn" [routerLink]="['/loan-history']">Check History</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 

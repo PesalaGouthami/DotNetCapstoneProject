@@ -1,0 +1,104 @@
+<div class="container-fluid bg-dark text-white p-0">
+    <div class="container bg-white text-dark p-4">
+        <div class="customer-search-container">
+            <h2 style="padding: 5px;">Find Customer</h2>
+
+            <form #f1="ngForm">
+                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <input #fn="ngModel" type="text" class="form-control" placeholder="First Name" [(ngModel)]="firstName"
+                            id="firstName" name="firstName"  required minlength="3" maxlength="15">
+                    </div>
+    
+                    <div class="col-md">
+                        <input #ln="ngModel" type="text" class="form-control" placeholder="Last Name" [(ngModel)]="lastName" id="lastName"
+                            name="lastName" required minlength="3" maxlength="15">
+                    </div>
+                    <div class="col-md">
+                        <input #dob="ngModel" type="date" class="form-control" [(ngModel)]="dateOfBirth" id="dateOfBirth"
+                            name="dateOfBirth" required>
+                    </div>
+                </div>
+    
+                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <div *ngIf="fn.invalid && (fn.dirty || fn.touched)"
+                            style="color: red; font-style: italic; font-weight: bold; font-size: 12px;">
+                            <div *ngIf="fn.errors?.['required']">first name must not be empty!!!</div>
+                            <div *ngIf="fn.errors?.['minlength']">first name must be minimum 3 characters!!</div>
+                           
+                        </div>
+                    </div>              
+    
+                    <div class="col-md">
+                        <div *ngIf="ln.invalid && (ln.dirty || ln.touched)"
+                            style="color: red; font-style: italic; font-weight: bold; font-size: 12px;">
+                            <div *ngIf="ln.errors?.['required']">last name must not be empty!!!</div>
+                            <div *ngIf="ln.errors?.['minlength']">last name be minimum 3 characters!!</div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div *ngIf="dob.invalid && (dob.dirty || dob.touched)"
+                            style="color: red; font-style: italic; font-weight: bold; font-size: 12px;">
+                            <div *ngIf="dob.errors?.['required']">date of birth must not be empty!!!</div>                       
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex justify-content-center">
+                    <button class="btn" [disabled]="f1.invalid" (click)="searchCustomers()" style="background-color: orange;">Find
+                        Customer</button>
+                </div>
+            </form>
+            
+
+            <div class="results" *ngIf="totalResults > 0">
+                <h3 style="padding: 5px;">Total ({{ totalResults }}) Result Found</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th style="background-color: orange;">ID</th>
+                                <th style="background-color: orange;">First name</th>
+                                <th style="background-color: orange;">Last name</th>
+                                <th style="background-color: orange;">Date of Birth</th>
+                                <th style="background-color: orange;">Phone</th>
+                                <th style="background-color: orange;">Email</th>
+                                <th style="background-color: orange;">Address</th>
+                                <th style="background-color: orange;">Company name</th>
+                                <th style="background-color: orange;">Salary</th>
+                                <th style="background-color: orange;">Net income</th>
+                                <th style="background-color: orange;">Last salary date</th>
+                                <th style="background-color: orange;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let customer of customers">
+                                <td>{{ customer.id }}</td>
+                                <td>{{ customer.firstName }}</td>
+                                <td>{{ customer.lastName }}</td>
+                                <td>{{ customer.date_of_Birth }}</td>
+                                <td>{{ customer.phone }}</td>
+                                <td>{{ customer.email }}</td>
+                                <td>{{ customer.address }}</td>
+                                <td>{{ customer.company_Name }}</td>
+                                <td>{{ customer.salary }}</td>
+                                <td>{{ customer.net_Income }}</td>
+                                <td>{{ customer.last_salary_date }}</td>
+                                <td><button class="btn btn-warning" style="background-color: orange;" [routerLink]="['/apply-loan', customer.id]" >Apply</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="container bg-white text-dark p-4 justify-content-center align-items-center text-center"
+                [hidden]="isHidden">
+                <h3 style="color: red;">No customer found</h3>
+
+                <button class="btn btn-warning" (click)="addCustomer()" style="background-color: orange;">Add
+                    customer</button>
+            </div>
+        </div>
+    </div>
+</div>

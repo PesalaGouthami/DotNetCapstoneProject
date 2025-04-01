@@ -1,0 +1,28 @@
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black; /* Light gray background */
+    border-bottom: 1px solid #ddd;
+  }
+ 
+  .logo {
+    max-width: 150px;
+    height: auto; /* Maintain aspect ratio */
+  }
+ 
+  .logout-button {
+    background-color: #dc3545; /* Red background */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }

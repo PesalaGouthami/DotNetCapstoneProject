@@ -1,0 +1,25 @@
+ER Diagram with Cardinality Ratios
++------------------+       +------------------+       +------------------+
+|     Users        |       |    Customer      |       | EmploymentDetails|
++------------------+       +------------------+       +------------------+
+| id (PK)          |1     M| id (PK)          |1     1| id (PK, FK)      |
+| username         |-------| firstname        |-------| company_name     |
+| firstname        |       | lastname         |       | salary           |
+| lastname         |       | date_of_birth    |       | net_income       |
+| pin              |       | phone            |       | last_salary_date |
++------------------+       | email            |       +------------------+
+                           | address          |
+                           +------------------+
+
++------------------+       +------------------+       +------------------+
+| LoanApplication  |       |   LoanHistory    |       |   Transactions   |
++------------------+       +------------------+       +------------------+
+| loan_id (PK)     |1     M| loan_id (PK, FK) |1     1| transaction_id (PK)|
+| customer_id (FK) |-------| status           |1     M| loan_id (FK)     |
+| employee_id (FK) |       | loan_amount      |-------| amount_paid      |
+| loan_amount      |       | amount_paid      |       | date_of_transaction|
+| loan_status      |       | remaining_balance|       +------------------+
+| date_of_request  |       | due_date         |
+| loan_tenure      |       +------------------+
+| rate_of_interest |
++------------------+

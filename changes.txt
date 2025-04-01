@@ -1,0 +1,2 @@
+hello Naveen
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets

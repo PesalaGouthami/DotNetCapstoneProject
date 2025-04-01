@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "aoB6pDGc6Nb7Jdkl1gHKb3STRcZN6zf6/ZXVqRJBG1Y=",
+  "Source": "LoanOrigination",
+  "BasePath": "_content/LoanOrigination",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

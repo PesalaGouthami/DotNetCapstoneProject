@@ -1,0 +1,45 @@
+/* .container {
+    margin: auto;
+    padding: 20px;
+  }
+   */
+  header {
+    background-color: #343a40;
+  }
+  
+  .text-orange {
+    color: #ff6600;
+  }
+  
+  .nav-link {
+    margin: 10px 0;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  .btn-orange {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: #ff6600;
+  }
+  .f1,.emi-display{
+    border-radius:10px;
+    box-shadow: 5px 5px gray;
+  }
+  .emi-display{
+    height: 200px;
+  }
+  p{
+    color: black;
+  }
+  .bg-lightgray {
+    background-color: lightgray;
+  }

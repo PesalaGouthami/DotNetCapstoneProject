@@ -1,0 +1,101 @@
+<div class="container text-white" style="background-color: lightgray;">
+  <div *ngIf="!showLoanForm">
+    
+    <div *ngIf="net_income">
+      <p style="color: black;">Dear,</p>
+      <p style="color: black;">As per your income details your loan amount is <strong style="color: #ff6600;">$ {{ suggestedLoanAmount }}</strong>.</p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group bg-white text-dark p-3 f1">
+            <div class="row">
+              <div class="col-md-8">
+            <label for="loan_amount">How much money do you need?</label>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-success" style="background-color: lightgray; font-weight: bolder; border-radius: 5px;"> $ {{ loan_amount }}  /-</h4>
+          </div>
+          </div>
+          <div class="row">
+            <input type="range" id="loan_amount" class="form-range"  [min]="suggestedLoanAmount" [max]="maxLoanAmount" [(ngModel)]="loan_amount" (input)="calculateEMI()">
+          </div>
+          </div>
+          <div class="form-group bg-white text-dark p-3 mt-3 f1">
+            <div class="row">
+              <div class="col-md-8">
+            <label for="loan_tenure">How much tenure do you want?</label>
+          </div>
+          <div class="col-md-4">
+            <h4 style="background-color: lightgray; font-weight: bolder;color:#ff6600; border-radius:5px ;"> {{ loan_tenure }} months</h4>
+          </div>
+          </div>
+          <div class="row">
+            <input type="range" id="loan_tenure" class="form-range" min="1" max="60" [(ngModel)]="loan_tenure" (input)="calculateEMI()">
+          </div>
+          </div>
+          <button class="btn btn-orange mt-2" (click)="proceed()">Proceed with selected amount: ${{ loan_amount }}</button>
+        </div>
+        <div class="col-md-4">
+          <div class="emi-display bg-white text-dark p-3">
+            <p>You will pay</p>
+            <h3 style="color:#ff6600"><strong>${{ emi }}</strong></h3>
+            <p>per month</p>
+            <p>{{ rate_of_intrest }}% interest rate applied.</p>
+          </div>
+          <button class="btn btn-danger mt-2" (click)="cancel()">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showLoanForm">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Customer ID</td>
+          <td>{{ customer_id }}</td>
+        </tr>
+        <tr>
+          <td>Selected Loan Amount</td>
+          <td>${{ loan_amount }}</td>
+        </tr>
+        <tr>
+          <td>Selected Tenure</td>
+          <td>{{ loan_tenure }} months</td>
+        </tr>
+        <tr>
+          <td>You will pay</td>
+          <td>${{ emi }} per month</td>
+        </tr>
+        <tr>
+          <td>Interest Rate Applied</td>
+          <td>{{ rate_of_intrest }}%</td>
+        </tr>
+        <tr>
+          <td>Loan Status</td>
+          <td>{{ loan_status }}</td>
+        </tr>
+        <tr>
+          <td>Date of Request</td>
+          <td>{{ date_of_request }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="form-group">
+      <label for="employee_id">Enter the Employee Id</label>
+      <input type="text" id="employee_id" class="form-control" [(ngModel)]="employee_id">
+    </div>
+    <div class="row">
+      <div class="col">
+    <button class="btn btn-orange mt-2" (click)="submitLoan()">Submit Loan Application</button>
+  </div>
+  <div class="col">
+    <button class="btn btn-secondary mt-2" (click)="cancel()">Cancel</button>
+  </div>
+  </div>
+  </div>
+</div>

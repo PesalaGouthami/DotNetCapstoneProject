@@ -1,0 +1,45 @@
+  /* Background styling */
+  .login-container {
+    height: 100vh;
+    background-color: #000; /* Black background */
+  }
+   
+  /* Login box styling */
+  .login-box {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+  }
+   
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+   
+  .form-control {
+    background: transparent;
+    border: 2px solid #ff6600;
+    color: white;
+    border-radius: 25px;
+  }
+   
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+   
+  .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 25px;
+  }
+   
+  .btn-primary:hover {
+    background-color: #e65c00;
+  }
+   
+  .language-selection button {
+    margin: 5px;
+  }

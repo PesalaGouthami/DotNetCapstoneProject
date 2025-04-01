@@ -1,0 +1,27 @@
+<div class="login-container d-flex justify-content-center align-items-center">
+    <div class="login-box">
+      <div class="text-center">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <h2 class="text-white">T Finance</h2>
+      </div>
+      
+      <form (ngSubmit)="login()">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Username" name="username" [(ngModel)]='loginData.username' required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" name="pin" placeholder="4 Digit MPIN" minlength="4" maxlength="4" [(ngModel)]='loginData.pin' required>
+        </div>
+        <button class="btn btn-primary w-100">Login</button>
+      </form>
+   
+      <div class="language-selection text-center">
+        <p class="text-white">Select Language</p>
+        <button class="btn btn-sm btn-outline-light">🇺🇸 English</button>
+        <button class="btn btn-sm btn-outline-light">🇪🇸 Spanish</button>
+        <button class="btn btn-sm btn-outline-light">🇫🇷 French</button>
+      </div>
+    </div>
+  </div>
+
+   

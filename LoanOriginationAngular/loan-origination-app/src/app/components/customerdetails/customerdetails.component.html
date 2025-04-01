@@ -1,0 +1,146 @@
+<div class="container mt-4">
+    <div class="card shadow p-4">
+    <h2 class="text-center mb-4">New Loan Form</h2>
+    <hr>
+    <form (ngSubmit)="onSubmit()" *ngIf="customerdetails">
+        <fieldset>
+            <h5 class="mb-3">Personal Details:</h5>
+
+          
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="firstname">First Name </label>
+                    <input #firstname="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.firstName"
+                        id="firstname" name="firstname" required minlength="3">
+                    <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)" style="color:#ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="firstname.errors?.['required']">first name must not be empty</div>
+                        <div *ngIf="firstname.errors?.['minlength']">First name must be minimum 3-character</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label for="lastname">Last Name </label>
+                    <input #lastname="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.lastName"
+                        id="lastname" name="lastname" required minlength="3">
+                    <div *ngIf="lastname.invalid && (lastname.dirty || lastname.touched)" style="color: #ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="lastname.errors?.['required']">last name must not be empty</div>
+                        <div *ngIf="lastname.errors?.['minlength']">last name must be minimum 3-character</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="date_of_Birth">Date of Birth (YYYY-MM-DD)</label>
+                    <input #dob="ngModel" type="string" class="form-control" [(ngModel)]="customerdetails.date_of_Birth"
+                        id="date_of_Birth" name="date_of_Birth" required>
+                    <div *ngIf="dob.invalid && (dob.dirty || dob.touched)" style="color: #ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="dob.errors?.['required']">date of birth must not be empty</div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="email">Email Id</label>
+                    <input #email="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.email"
+                        id="email" name="email" required email>
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" style="color: #ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="email.errors?.['required']">email must not be empty</div>
+                        <div *ngIf="email.errors?.['email']">email must be valid</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="phone">Phone Number</label>
+                    <input #phone="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.phone"
+                        id="phone" name="phone" required pattern="^[0-9]{10,10}$">
+                    <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" style="color: #ff6600;font-style: italic;
+                    font-weight: bold;font-size: 12px;">
+                        <div *ngIf="phone.errors?.['required']">phone no is mandidory</div>
+                        <div *ngIf="phone.errors?.['pattern']">phone number must be 10 digits</div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="address">Address</label>
+                    <input #add="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.address"
+                        id="address" name="address" required minlength="3" >
+                    <div *ngIf="add.invalid && (add.dirty || add.touched)" style="color: #ff6600;font-style: italic;
+                    font-weight: bold;font-size: 12px;">
+                        <div *ngIf="add.errors?.['required']">Address must not be empty</div>
+                        <div *ngIf="add.errors?.['minlength']">Address must be minimum 3-character</div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h5 class="mb-3">Employment Details:</h5>
+
+       
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="company_Name">Company Name</label>
+                    <input #com="ngModel" type="text" class="form-control" [(ngModel)]="customerdetails.company_Name"
+                        id="company_Name" name="company_Name" required minlength="3">
+                    <div *ngIf="com.invalid && (com.dirty || com.touched)" style="color: #ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="com.errors?.['required']">Company name must not be empty</div>
+                        <div *ngIf="com.errors?.['minlength']">Company name must be minimum 3-character</div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="salary">Salary:</label>
+                    <input #sal="ngModel" type="number" class="form-control" [(ngModel)]="customerdetails.salary" id="salary"
+                        name="salary" required min="1000">
+                        <div *ngIf="sal.invalid && (sal.dirty || sal.touched)" style="color: #ff6600;font-style: italic;
+                        font-weight: bold;font-size: 12px;">
+                                        <div *ngIf="sal.errors?.['required']">Salary  must not be empty</div>
+                                        <div *ngIf="sal.errors?.['min']">Salary must be at least 1000</div>
+                                    </div>           
+                </div>
+            </div>
+
+          
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="net_Income">Net Income</label>
+                    <input #net="ngModel" type="number" class="form-control" [(ngModel)]="customerdetails.net_Income" id="net_Income"
+                        name="net_Income" required [ngModelOptions]="{ standalone: true }" >
+                        <div *ngIf="(net.errors?.['required'] || customerdetails.net_Income > customerdetails.salary) && (net.dirty || net.touched)"
+                            style="color: #ff6600; font-style: italic; font-weight: bold; font-size: 12px;">
+                         <div *ngIf="net.errors?.['required']">Net Income must not be empty</div>
+                         <div *ngIf="customerdetails.net_Income > customerdetails.salary">Net Income cannot exceed Salary</div>
+                       </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="last_salary_date">Last Salary Date (YYYY-MM-DD):</label>
+                    <input #saldate="ngModel" type="string" class="form-control"
+                        [(ngModel)]="customerdetails.last_salary_date" id="last_salary_date" name="last_salary_date"
+                        required>
+                    <div *ngIf="saldate.invalid && (saldate.dirty || saldate.touched)" style="color: #ff6600;font-style: italic;
+        font-weight: bold;font-size: 12px;">
+                        <div *ngIf="saldate.errors?.['required']">Last Salary Date must not be empty</div>
+
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!-- class="buttons mt-4" -->
+        <!-- class="d-flex justify-content-center gap-3 mt-4" -->
+
+        <div class="d-flex justify-content-center gap-3 mt-5">
+            <button type="submit" class="btn" style="background-color: #ff6600; width: 180px; border-radius: none; color: white;">Proceed</button>
+           
+            <button type="button" class="btn btn-danger" (click)="onCancel()" style="width: 100px;">Cancel</button>
+        </div>
+    </form>
+</div>
+</div>

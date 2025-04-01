@@ -1,0 +1,345 @@
+{
+  "format": 1,
+  "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
+    "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {}
+  },
+  "projects": {
+    "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+        "projectName": "LoanOrigination",
+        "projectPath": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+<<<<<<< HEAD
+        "packagesPath": "C:\\Users\\malave.navanishwara\\.nuget\\packages\\",
+        "outputPath": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\obj\\",
+=======
+        "packagesPath": "C:\\Users\\nandan.ds\\.nuget\\packages\\",
+        "outputPath": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\obj\\",
+=======
+<<<<<<< HEAD
+    "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+        "projectName": "LoanOrigination",
+        "projectPath": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+        "packagesPath": "C:\\Users\\mohammed.labeeb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\obj\\",
+=======
+    "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+        "projectName": "LoanOrigination",
+        "projectPath": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj",
+        "packagesPath": "C:\\Users\\satyanarayana.k\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\obj\\",
+>>>>>>> main
+>>>>>>> main
+>>>>>>> main
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\malave.navanishwara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\nandan.ds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\mohammed.labeeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\satyanarayana.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> main
+>>>>>>> main
+>>>>>>> main
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.14, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
+    "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+        "projectName": "LoanTestPrj",
+        "projectPath": "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+<<<<<<< HEAD
+        "packagesPath": "C:\\Users\\malave.navanishwara\\.nuget\\packages\\",
+        "outputPath": "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\obj\\",
+=======
+        "packagesPath": "C:\\Users\\nandan.ds\\.nuget\\packages\\",
+        "outputPath": "C:\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\obj\\",
+=======
+<<<<<<< HEAD
+    "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+        "projectName": "LoanTestPrj",
+        "projectPath": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+        "packagesPath": "C:\\Users\\mohammed.labeeb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\obj\\",
+=======
+    "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+        "projectName": "LoanTestPrj",
+        "projectPath": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\LoanTestPrj.csproj",
+        "packagesPath": "C:\\Users\\satyanarayana.k\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanTestPrj\\obj\\",
+>>>>>>> main
+>>>>>>> main
+>>>>>>> main
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\malave.navanishwara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\nandan.ds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\mohammed.labeeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\satyanarayana.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> main
+>>>>>>> main
+>>>>>>> main
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+<<<<<<< HEAD
+              "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+                "projectPath": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+                "projectPath": "C:\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+                "projectPath": "C:\\Users\\mohammed.labeeb\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj"
+=======
+              "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj": {
+                "projectPath": "C:\\Users\\satyanarayana.k\\CapstoneProject\\LoanOrigination\\LoanOrigination\\LoanOrigination.csproj"
+>>>>>>> main
+>>>>>>> main
+>>>>>>> main
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1.7, )"
+            },
+=======
+>>>>>>> main
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+<<<<<<< HEAD
+=======
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1.7, )"
+=======
+<<<<<<< HEAD
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+=======
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1.7, )"
+>>>>>>> main
+>>>>>>> main
+            },
+>>>>>>> main
+<<<<<<< HEAD
+=======
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1.7, )"
+            },
+>>>>>>> dfd21ad (c2)
+=======
+>>>>>>> main
+>>>>>>> main
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
